@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aakash Sarang's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="resume.pdf">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I'm Aakash Sarang, a passionate web developer and competitive coder.</p>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+  </section>
+  
+
+  <section id="about" class="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <!-- Profile Image -->
+            <img src="aakash.jpg" alt="Aakash Sarang" class="about-photo">
+
+            <!-- Code Box -->
+            <div class="code-box">
+                <pre class="java-code">
+                    <span class="keyword">public</span> class AakashSarang {
+                        <span class="keyword">private</span> String name = <span class="string">"Aakash Sarang"</span>;
+                        <span class="keyword">private</span> String university = <span class="string">"Jagran Lakecity University"</span>;
+                        <span class="keyword">private</span> String passion = <span class="string">"Web Development and Competitive Coding"</span>;
+
+                        <span class="keyword">public</span> void aboutMe() {
+                            <span class="comment">// I'm a 2nd-year student at Jagran Lakecity University, Bhopal</span>
+                            <span class="comment">// Passionate about coding and building web applications</span>
+                            <span class="keyword">System</span>.<span class="method">out</span>.<span class="method">println</span>(name + <span class="string">" is currently a 2nd-year student."</span>);
+                            <span class="keyword">System</span>.<span class="method">out</span>.<span class="method">println</span>(university + <span class="string">" is where I study."</span>);
+                            <span class="keyword">System</span>.<span class="method">out</span>.<span class="method">println</span>(passion + <span class="string">" is my main interest."</span>);
+                        }
+                    }
+                </pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/cplusplus.svg" alt="C++">
+          <p>C++</p>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/java.svg" alt="Java">
+          <p>Java</p>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/javascript.svg" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/css3.svg" alt="CSS">
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/react.svg" alt="React">
+          <p>React</p>
+        </div>
+        <div class="skill">
+            <img src="vue-js.png" alt="Vue.js" />
+            <p>Vue.js</p>
+          </div>
+          <div class="skill">
+            <img src="chart-js.png" alt="Chart.js" />
+            <p>Chart.js</p>
+          </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>My Work</h2>
+      <div class="portfolio-items">
+        <!-- Science Day Project (Project 1) -->
+        <div class="portfolio-item">
+          <img src="nsd.avif" alt="Science Day Project">
+          <h3>Science Day Project</h3>
+          <p>🔬 A collection of interactive physics simulations showcasing fundamental concepts like <b>Coulomb's Law</b>, <b>Hooke's Law</b>,<b>Kepler's Laws</b>, <b>Snell's Law</b>, and <b>Thermodynamics</b>. Perfect for science day demonstrations. Explore interactive visualizations with <b>HTML</b>, <b>CSS</b>, and <b>JavaScript!</b> 🚀</p>
+          <a href="https://github.com/oggigachad/science-day-project" class="btn" target="_blank">View on GitHub</a>
+        </div>
+        <div class="portfolio-item">
+          <img src="calc.jpeg" alt="Science Day Project">
+          <h3>Simple Calculator</h3>
+          <p>Simple Calculator</p>
+          <a href="https://github.com/oggigachad/basic-calculator" class="btn" target="_blank">View on GitHub</a>          
+        </div>
+        <div class="portfolio-item">
+
+            <img src="gith.jpeg" alt="Science Day Project">
+            <h3>for more projects</h3>
+            <p></p>
+            <a href="https://github.com/oggigachad" class="btn" target="_blank">View on GitHub</a>          
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Aakash Sarang. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
